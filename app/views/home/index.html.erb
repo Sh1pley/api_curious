@@ -1,3 +1,23 @@
 <% if current_user %>
-  <h1 class="welcome">Welcome <%= current_user.username %>!</h1>
+<header>
+  <h1 class="welcome center-align">Welcome <%= current_user.username %>!</h1>
+</header>
+  <section class="col s12 m6 l3 center-align">
+    <p>
+      <img class="circle responsive-img z-depth-5" src=<%= "#{current_user.avatar}" %>>
+    </p>
+  </section>
+  <% @user.each do |user| %>
+    <section class="col-6">
+    <ul>
+    <li>Public Repos Made:<%= user.public_repos %></li>
+    <li>Followers:<%= user.followers %></li>
+    <li>Users Following:<%= user.following %></li>
+    </ul>
+    </section>
+    <% end%>
+<% else %>
+    <header>
+      Please log in above..
+    </header>
 <% end%>
