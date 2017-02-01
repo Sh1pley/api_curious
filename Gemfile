@@ -11,6 +11,7 @@ gem 'rails', '~> 5.0.1'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
+gem 'compass-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'materialize-sass'
@@ -37,6 +38,8 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'launchy'
   gem 'simplecov', :require => false, :group => :test
+  gem 'webmock'
+  gem 'vcr'
 end
 
 group :development do

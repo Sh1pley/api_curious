@@ -3,7 +3,8 @@ describe 'User' do
     @user =  {"uid" => "1234",
               "info" => {"name" => "Testy",
                          "image" => "test_image.jpeg"},
-              "credentials" => {"token" => "abcde12345"}
+              "credentials" => {"token" => "abcde12345"},
+              "extra" => {"raw_info" => {"login" => "Sh1pley"}}
             }
   end
 

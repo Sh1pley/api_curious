@@ -8,6 +8,8 @@ require 'rspec/rails'
 require 'support/factory_girl'
 require 'rack_session_access/capybara'
 require 'launchy'
+require 'webmock/rspec'
+WebMock.disable_net_connect!(allow_localhost: true)
 require 'simplecov'
 SimpleCov.start 'rails'
 # Add additional requires below this line. Rails is not loaded until this point!
