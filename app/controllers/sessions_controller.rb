@@ -1,12 +1,9 @@
 class SessionsController < ApplicationController
   def create
-    user = User.register(request.env["omniauth.auth"])
-    if user.save
-      session[:id] = user.id
-      redirect_to dashboard_index_path
-    else
-      redirect_to root_path
+    if user = User.register(request.env["omniauth.auth"])
+      session[:user_id] = user.id
     end
+      redirect_to root_path
   end
 
   def destroy

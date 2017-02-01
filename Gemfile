@@ -13,6 +13,7 @@ gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
+gem 'materialize-sass'
 
 
 gem 'jquery-rails'
@@ -32,6 +33,10 @@ group :development, :test do
   gem 'pry-stack_explorer'
   gem 'capybara'
   gem 'rspec-rails'
+  gem 'rack_session_access'
+  gem 'factory_girl_rails'
+  gem 'launchy'
+  gem 'simplecov', :require => false, :group => :test
 end
 
 group :development do

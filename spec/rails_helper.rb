@@ -5,8 +5,29 @@ require File.expand_path('../../config/environment', __FILE__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'spec_helper'
 require 'rspec/rails'
+require 'support/factory_girl'
+require 'rack_session_access/capybara'
+require 'launchy'
+require 'simplecov'
+SimpleCov.start 'rails'
 # Add additional requires below this line. Rails is not loaded until this point!
-
+OmniAuth.config.test_mode = true
+omniauth_hash = { 'provider' => 'github',
+                  'uid' => '12345',
+                  'info' => {
+                      'name' => 'Tests',
+                      'email' => 'hi@test.com',
+                      'nickname' => 'Test N Shit'
+                  },
+                  'extra' => {'raw_info' =>
+                                  { 'location' => 'San Francisco',
+                                    'gravatar_id' => '123456789'
+                                  }
+                              },
+                  'credentials' => {'token' => 'test1234'}
+                }
+ 
+OmniAuth.config.add_mock(:github, omniauth_hash)
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
 # run as spec files by default. This means that files in spec/support that end
@@ -20,7 +41,7 @@ require 'rspec/rails'
 # directory. Alternatively, in the individual `*_spec.rb` files, manually
 # require only the support files necessary.
 #
-# Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
 # Checks for pending migration and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove this line.
@@ -49,7 +70,7 @@ RSpec.configure do |config|
   # The different available types are documented in the features, such as in
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
-
+  
   # Filter lines from Rails gems in backtraces.
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
