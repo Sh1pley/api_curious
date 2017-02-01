@@ -1,0 +1,21 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="" class="brand-logo">HitGub</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <% if current_user %>
+        <li>Hello, <%= current_user.username %></li> 
+        <li><%= link_to(auth_github_logout_path) do %>
+        <span class="btn waves-effect waves-light">
+          Logout
+        </span>
+        <% end %></li>
+      <% else %>
+        <li><%= link_to(github_login_path) do %>
+        <span class="btn waves-effect waves-light">
+          Login with Github
+        </span></li>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+</nav>

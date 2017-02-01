@@ -1,3 +1,3 @@
-<h1>Its a Thing!</h1>
-
-<%= link_to 'Log in with Git', github_login_path %>
+<% if current_user %>
+  <h1 class="welcome">Welcome <%= current_user.username %>!</h1>
+<% end%>
