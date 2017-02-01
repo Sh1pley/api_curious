@@ -1,0 +1,27 @@
+body {
+  // Needs latest Compass, add '@import "compass"' to your scss
+// Permalink - use to edit and share this gradient:
+// http://colorzilla.com/gradient-editor/#e1ffff+0,e1ffff+7,e1ffff+12,fdffff+12,e6f8fd+30,c8eefb+54,bee4f8+75,b1d8f5+100;Blue+Pipe+%232
+
+background: #c2e59c; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #c2e59c , #64b3f4); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #c2e59c , #64b3f4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.img {
+  position:fixed;
+  right: 7%;
+  bottom: 10%;
+  width:40%; 
+  height:50%;
+}
+
+img.circle {
+  height: 25%;
+  width: 25%;
+}
+
+.btn.home {
+  background: linear-gradient(to left, #c2e59c , #64b3f4)
+}

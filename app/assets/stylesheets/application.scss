@@ -3,7 +3,7 @@ $secondary-color: color("white", "base") !default;
 $primary-color: color("blue", "lighten-2") !default;
 @import "compass";
 @import "materialize";
-
+@import "body";
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -22,13 +22,3 @@ $primary-color: color("blue", "lighten-2") !default;
  *= require_tree .
  *= require_self
  */
-
-body {
-  // Needs latest Compass, add '@import "compass"' to your scss
-// Permalink - use to edit and share this gradient:
-// http://colorzilla.com/gradient-editor/#e1ffff+0,e1ffff+7,e1ffff+12,fdffff+12,e6f8fd+30,c8eefb+54,bee4f8+75,b1d8f5+100;Blue+Pipe+%232
-background-color: #e1ffff; // Old browsers
-@include filter-gradient(#e1ffff, #b1d8f5, horizontal); // IE6-9 fallback on horizontal gradient
-@include background-image(linear-gradient(left top,  #e1ffff 0%,#e1ffff 7%,#e1ffff 12%,#fdffff 12%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 100%));
-
-}

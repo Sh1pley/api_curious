@@ -4,20 +4,31 @@
 </header>
   <section class="col s12 m6 l3 center-align">
     <p>
-      <img class="circle responsive-img z-depth-5" src=<%= "#{current_user.avatar}" %>>
+      <img class="circle responsive-img z-depth-5 hide-on-small-only" src=<%= "#{current_user.avatar}" %>>
     </p>
   </section>
-  <% @user.each do |user| %>
-    <section class="col-6">
-    <ul>
-    <li>Public Repos Made:<%= user.public_repos %></li>
-    <li>Followers:<%= user.followers %></li>
-    <li>Users Following:<%= user.following %></li>
-    </ul>
+    <section class="col-6 center-align">
+      <ul>
+        <h4>
+          <div class="btn home">
+            <li>Followers: <%= "#{@user.followers}" %></li>
+          </div><br>
+          <div class="btn home">
+            <li>Users Following: <%= "#{@user.following}" %></li>
+          </div><br>
+          <div class="btn home">
+            <li>Public Repos Made: <%= "#{@user.public_repos}" %></li>
+          </div><br>
+        </h4>
+      </ul>
     </section>
-    <% end%>
 <% else %>
     <header>
-      Please log in above..
+      <h4 class="center-align">
+        Please log in above..
+      </h4>
     </header>
+    <div>
+      <img class="responsive_img right img" src= <%= image_path("murakamicat.png")%> />
+    </div>
 <% end%>
