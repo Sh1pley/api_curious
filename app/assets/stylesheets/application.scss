@@ -4,6 +4,8 @@ $primary-color: color("blue", "lighten-2") !default;
 @import "compass";
 @import "materialize";
 @import "body";
+@import "navbar";
+@import "search";
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

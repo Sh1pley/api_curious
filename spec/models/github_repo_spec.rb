@@ -17,4 +17,18 @@ describe 'GithubRepo' do
       end
     end
   end
+  context '.get_repo(repo_name, login)' do
+    it 'gets a repo from github services' do
+      VCR.use_cassette("github_get_single_repo") do
+        repo = GithubRepo.get_repo("99_bottles", user.login)
+
+        expect(repo).to be_a(GithubRepo)
+
+        expect(repo.name).to be_a(String)
+        expect(repo.url).to be_a(String)
+        expect(repo.updated_at).to be_a(String)
+        expect(repo.language).to be_a(String)
+      end
+    end
+  end
 end
