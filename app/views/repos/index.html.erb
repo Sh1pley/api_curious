@@ -1,18 +1,1 @@
-<div class="responsive-container center-align">
-    <% @repos.each do |repo| %>
-    <section class="repo">
-      <p class="flow-text">
-        <%= link_to("/repos/#{repo.name}?login=#{current_user.login}") do %>
-          <span class="repo">
-            <%= repo.name %>
-          </span>
-        <% end %>
-      </p>
-    </section><br>
-    <section>
-      <p>
-        <%= repo.description %>
-      </p>
-    </section>
-  <% end %>
-</div>
+<%= render partial: 'layouts/repos' %>

@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/Sh1pley/99_bottles/commits?access_token=d2aa7244db825ceba114450f449b6500d92f2950
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 02 Feb 2017 20:47:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4999'
+      X-Ratelimit-Reset:
+      - '1486072043'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      Etag:
+      - W/"74961d30ddc258382941e9e58aae0c8d"
+      Last-Modified:
+      - Thu, 10 Nov 2016 22:48:08 GMT
+      X-Oauth-Scopes:
+      - gist, repo, user
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - "<client_id>"
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - edf23fdc48375d9066b698b8d98062e9
+      X-Github-Request-Id:
+      - CDB0:3F90:ADAEA7B:E31458D:58939ADB
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"sha":"9e2e51927c22e9b6535dd4561faf7f2a06cd52e5","commit":{"author":{"name":"Jesse
+        Shipley","email":"jesse.radack@gmail.com","date":"2016-11-10T22:48:08Z"},"committer":{"name":"Jesse
+        Shipley","email":"jesse.radack@gmail.com","date":"2016-11-10T22:48:08Z"},"message":"cleaning
+        up house, making things work","tree":{"sha":"c26c95cfdabe92e173f742730471f26911f9ca89","url":"https://api.github.com/repos/Sh1pley/99_bottles/git/trees/c26c95cfdabe92e173f742730471f26911f9ca89"},"url":"https://api.github.com/repos/Sh1pley/99_bottles/git/commits/9e2e51927c22e9b6535dd4561faf7f2a06cd52e5","comment_count":0},"url":"https://api.github.com/repos/Sh1pley/99_bottles/commits/9e2e51927c22e9b6535dd4561faf7f2a06cd52e5","html_url":"https://github.com/Sh1pley/99_bottles/commit/9e2e51927c22e9b6535dd4561faf7f2a06cd52e5","comments_url":"https://api.github.com/repos/Sh1pley/99_bottles/commits/9e2e51927c22e9b6535dd4561faf7f2a06cd52e5/comments","author":{"login":"Sh1pley","id":12022194,"avatar_url":"https://avatars.githubusercontent.com/u/12022194?v=3","gravatar_id":"","url":"https://api.github.com/users/Sh1pley","html_url":"https://github.com/Sh1pley","followers_url":"https://api.github.com/users/Sh1pley/followers","following_url":"https://api.github.com/users/Sh1pley/following{/other_user}","gists_url":"https://api.github.com/users/Sh1pley/gists{/gist_id}","starred_url":"https://api.github.com/users/Sh1pley/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Sh1pley/subscriptions","organizations_url":"https://api.github.com/users/Sh1pley/orgs","repos_url":"https://api.github.com/users/Sh1pley/repos","events_url":"https://api.github.com/users/Sh1pley/events{/privacy}","received_events_url":"https://api.github.com/users/Sh1pley/received_events","type":"User","site_admin":false},"committer":{"login":"Sh1pley","id":12022194,"avatar_url":"https://avatars.githubusercontent.com/u/12022194?v=3","gravatar_id":"","url":"https://api.github.com/users/Sh1pley","html_url":"https://github.com/Sh1pley","followers_url":"https://api.github.com/users/Sh1pley/followers","following_url":"https://api.github.com/users/Sh1pley/following{/other_user}","gists_url":"https://api.github.com/users/Sh1pley/gists{/gist_id}","starred_url":"https://api.github.com/users/Sh1pley/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Sh1pley/subscriptions","organizations_url":"https://api.github.com/users/Sh1pley/orgs","repos_url":"https://api.github.com/users/Sh1pley/repos","events_url":"https://api.github.com/users/Sh1pley/events{/privacy}","received_events_url":"https://api.github.com/users/Sh1pley/received_events","type":"User","site_admin":false},"parents":[{"sha":"00bf5c7376b7db0b8c773e23447dcab44353f3c9","url":"https://api.github.com/repos/Sh1pley/99_bottles/commits/00bf5c7376b7db0b8c773e23447dcab44353f3c9","html_url":"https://github.com/Sh1pley/99_bottles/commit/00bf5c7376b7db0b8c773e23447dcab44353f3c9"}]},{"sha":"00bf5c7376b7db0b8c773e23447dcab44353f3c9","commit":{"author":{"name":"Jesse
+        Shipley","email":"jesse.radack@gmail.com","date":"2016-10-25T14:53:48Z"},"committer":{"name":"Jesse
+        Shipley","email":"jesse.radack@gmail.com","date":"2016-10-25T14:53:48Z"},"message":"refactored
+        if statement","tree":{"sha":"3e4af02f695a49d1b553c4ca40954c3d4fa11bd4","url":"https://api.github.com/repos/Sh1pley/99_bottles/git/trees/3e4af02f695a49d1b553c4ca40954c3d4fa11bd4"},"url":"https://api.github.com/repos/Sh1pley/99_bottles/git/commits/00bf5c7376b7db0b8c773e23447dcab44353f3c9","comment_count":0},"url":"https://api.github.com/repos/Sh1pley/99_bottles/commits/00bf5c7376b7db0b8c773e23447dcab44353f3c9","html_url":"https://github.com/Sh1pley/99_bottles/commit/00bf5c7376b7db0b8c773e23447dcab44353f3c9","comments_url":"https://api.github.com/repos/Sh1pley/99_bottles/commits/00bf5c7376b7db0b8c773e23447dcab44353f3c9/comments","author":{"login":"Sh1pley","id":12022194,"avatar_url":"https://avatars.githubusercontent.com/u/12022194?v=3","gravatar_id":"","url":"https://api.github.com/users/Sh1pley","html_url":"https://github.com/Sh1pley","followers_url":"https://api.github.com/users/Sh1pley/followers","following_url":"https://api.github.com/users/Sh1pley/following{/other_user}","gists_url":"https://api.github.com/users/Sh1pley/gists{/gist_id}","starred_url":"https://api.github.com/users/Sh1pley/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Sh1pley/subscriptions","organizations_url":"https://api.github.com/users/Sh1pley/orgs","repos_url":"https://api.github.com/users/Sh1pley/repos","events_url":"https://api.github.com/users/Sh1pley/events{/privacy}","received_events_url":"https://api.github.com/users/Sh1pley/received_events","type":"User","site_admin":false},"committer":{"login":"Sh1pley","id":12022194,"avatar_url":"https://avatars.githubusercontent.com/u/12022194?v=3","gravatar_id":"","url":"https://api.github.com/users/Sh1pley","html_url":"https://github.com/Sh1pley","followers_url":"https://api.github.com/users/Sh1pley/followers","following_url":"https://api.github.com/users/Sh1pley/following{/other_user}","gists_url":"https://api.github.com/users/Sh1pley/gists{/gist_id}","starred_url":"https://api.github.com/users/Sh1pley/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Sh1pley/subscriptions","organizations_url":"https://api.github.com/users/Sh1pley/orgs","repos_url":"https://api.github.com/users/Sh1pley/repos","events_url":"https://api.github.com/users/Sh1pley/events{/privacy}","received_events_url":"https://api.github.com/users/Sh1pley/received_events","type":"User","site_admin":false},"parents":[{"sha":"be59770932abeaac897b6149b1fe6abdb231c016","url":"https://api.github.com/repos/Sh1pley/99_bottles/commits/be59770932abeaac897b6149b1fe6abdb231c016","html_url":"https://github.com/Sh1pley/99_bottles/commit/be59770932abeaac897b6149b1fe6abdb231c016"}]},{"sha":"be59770932abeaac897b6149b1fe6abdb231c016","commit":{"author":{"name":"Jesse
+        Shipley","email":"jesse.radack@gmail.com","date":"2016-10-25T14:48:27Z"},"committer":{"name":"Jesse
+        Shipley","email":"jesse.radack@gmail.com","date":"2016-10-25T14:48:27Z"},"message":"fixed
+        error in test","tree":{"sha":"b8213536a2d28ab7dacab7dc18c74a5c4f5941ba","url":"https://api.github.com/repos/Sh1pley/99_bottles/git/trees/b8213536a2d28ab7dacab7dc18c74a5c4f5941ba"},"url":"https://api.github.com/repos/Sh1pley/99_bottles/git/commits/be59770932abeaac897b6149b1fe6abdb231c016","comment_count":0},"url":"https://api.github.com/repos/Sh1pley/99_bottles/commits/be59770932abeaac897b6149b1fe6abdb231c016","html_url":"https://github.com/Sh1pley/99_bottles/commit/be59770932abeaac897b6149b1fe6abdb231c016","comments_url":"https://api.github.com/repos/Sh1pley/99_bottles/commits/be59770932abeaac897b6149b1fe6abdb231c016/comments","author":{"login":"Sh1pley","id":12022194,"avatar_url":"https://avatars.githubusercontent.com/u/12022194?v=3","gravatar_id":"","url":"https://api.github.com/users/Sh1pley","html_url":"https://github.com/Sh1pley","followers_url":"https://api.github.com/users/Sh1pley/followers","following_url":"https://api.github.com/users/Sh1pley/following{/other_user}","gists_url":"https://api.github.com/users/Sh1pley/gists{/gist_id}","starred_url":"https://api.github.com/users/Sh1pley/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Sh1pley/subscriptions","organizations_url":"https://api.github.com/users/Sh1pley/orgs","repos_url":"https://api.github.com/users/Sh1pley/repos","events_url":"https://api.github.com/users/Sh1pley/events{/privacy}","received_events_url":"https://api.github.com/users/Sh1pley/received_events","type":"User","site_admin":false},"committer":{"login":"Sh1pley","id":12022194,"avatar_url":"https://avatars.githubusercontent.com/u/12022194?v=3","gravatar_id":"","url":"https://api.github.com/users/Sh1pley","html_url":"https://github.com/Sh1pley","followers_url":"https://api.github.com/users/Sh1pley/followers","following_url":"https://api.github.com/users/Sh1pley/following{/other_user}","gists_url":"https://api.github.com/users/Sh1pley/gists{/gist_id}","starred_url":"https://api.github.com/users/Sh1pley/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Sh1pley/subscriptions","organizations_url":"https://api.github.com/users/Sh1pley/orgs","repos_url":"https://api.github.com/users/Sh1pley/repos","events_url":"https://api.github.com/users/Sh1pley/events{/privacy}","received_events_url":"https://api.github.com/users/Sh1pley/received_events","type":"User","site_admin":false},"parents":[{"sha":"e32b949edae2cba4250f136d5367313b32e49fe5","url":"https://api.github.com/repos/Sh1pley/99_bottles/commits/e32b949edae2cba4250f136d5367313b32e49fe5","html_url":"https://github.com/Sh1pley/99_bottles/commit/e32b949edae2cba4250f136d5367313b32e49fe5"}]},{"sha":"e32b949edae2cba4250f136d5367313b32e49fe5","commit":{"author":{"name":"Jesse
+        Shipley","email":"jesse.radack@gmail.com","date":"2016-10-25T14:26:14Z"},"committer":{"name":"Jesse
+        Shipley","email":"jesse.radack@gmail.com","date":"2016-10-25T14:26:14Z"},"message":"initial
+        commit, 3 assertions, one not passing -- refactoring","tree":{"sha":"4c3af1862fb54be223acc49a4c00d6e93adbb83d","url":"https://api.github.com/repos/Sh1pley/99_bottles/git/trees/4c3af1862fb54be223acc49a4c00d6e93adbb83d"},"url":"https://api.github.com/repos/Sh1pley/99_bottles/git/commits/e32b949edae2cba4250f136d5367313b32e49fe5","comment_count":0},"url":"https://api.github.com/repos/Sh1pley/99_bottles/commits/e32b949edae2cba4250f136d5367313b32e49fe5","html_url":"https://github.com/Sh1pley/99_bottles/commit/e32b949edae2cba4250f136d5367313b32e49fe5","comments_url":"https://api.github.com/repos/Sh1pley/99_bottles/commits/e32b949edae2cba4250f136d5367313b32e49fe5/comments","author":{"login":"Sh1pley","id":12022194,"avatar_url":"https://avatars.githubusercontent.com/u/12022194?v=3","gravatar_id":"","url":"https://api.github.com/users/Sh1pley","html_url":"https://github.com/Sh1pley","followers_url":"https://api.github.com/users/Sh1pley/followers","following_url":"https://api.github.com/users/Sh1pley/following{/other_user}","gists_url":"https://api.github.com/users/Sh1pley/gists{/gist_id}","starred_url":"https://api.github.com/users/Sh1pley/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Sh1pley/subscriptions","organizations_url":"https://api.github.com/users/Sh1pley/orgs","repos_url":"https://api.github.com/users/Sh1pley/repos","events_url":"https://api.github.com/users/Sh1pley/events{/privacy}","received_events_url":"https://api.github.com/users/Sh1pley/received_events","type":"User","site_admin":false},"committer":{"login":"Sh1pley","id":12022194,"avatar_url":"https://avatars.githubusercontent.com/u/12022194?v=3","gravatar_id":"","url":"https://api.github.com/users/Sh1pley","html_url":"https://github.com/Sh1pley","followers_url":"https://api.github.com/users/Sh1pley/followers","following_url":"https://api.github.com/users/Sh1pley/following{/other_user}","gists_url":"https://api.github.com/users/Sh1pley/gists{/gist_id}","starred_url":"https://api.github.com/users/Sh1pley/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Sh1pley/subscriptions","organizations_url":"https://api.github.com/users/Sh1pley/orgs","repos_url":"https://api.github.com/users/Sh1pley/repos","events_url":"https://api.github.com/users/Sh1pley/events{/privacy}","received_events_url":"https://api.github.com/users/Sh1pley/received_events","type":"User","site_admin":false},"parents":[]}]'
+    http_version: 
+  recorded_at: Thu, 02 Feb 2017 20:47:23 GMT
+recorded_with: VCR 3.0.3

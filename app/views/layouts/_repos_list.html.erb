@@ -1,0 +1,7 @@
+<% repos.each do |repo| %>
+  <div class="home collapsible-body center-align">
+    <%= link_to(repo_path(repo.name)) do %>
+    <span class="home"><%= repo.name %></span>
+    <% end %>
+  </div>
+<% end %>

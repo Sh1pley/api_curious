@@ -1,14 +1,18 @@
 
-<section class="show container-responsive center-align">
-  <h3 class="float-text left">  
-    <%= @repo.name %>
-  </h3><br>
-  <p class="left">
-    Writtin in <%= @repo.language %>
-  </p>
+<h3 class="title float-text center-align">  
+  <%= @repo.name %>
+</h3><br>
+ 
+<section class="container-responsive center-align">
   <p class="left">
     <%= @repo.description %>
   </p>
 
-
+  <% @commits.each do |commit| %>
+  <p>
+    <%= commit.author[:name] %>
+    <%= commit.message %>
+  </p>
+  <% end %>
 </section>
+    

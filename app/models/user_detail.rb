@@ -9,8 +9,8 @@ class UserDetail
     @following    = attrs[:following]
   end
 
-  def self.get_details(login)
-    data = GithubService.request_user(login)
+  def self.get_details(user)
+    data = GithubService.request_user(user)
     new(data)
   end
 end
