@@ -7,7 +7,8 @@ class ReposController < ApplicationController
   end
 
   def show
-    @repo = GithubRepo.get_repo(params[:id], params[:login])
+    @repo = GithubRepo.get_repo(params[:id], current_user)
+    @commits = GithubCommit.get_commits(@repo.name, current_user)
   end
 
 end

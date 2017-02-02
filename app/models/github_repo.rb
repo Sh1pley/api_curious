@@ -14,13 +14,13 @@ class GithubRepo
   end
 
   def self.gather_repos(user)
-    GithubService.request_repos(user.login).map do |raw_repo|
+    GithubService.request_repos(user).map do |raw_repo|
       new(raw_repo)
     end
   end
 
-  def self.get_repo(repo_name, login)
-    raw_repo = GithubService.get_repo(repo_name, login)
+  def self.get_repo(repo_name, user)
+    raw_repo = GithubService.get_repo(repo_name, user)
     new(raw_repo)
   end
 end

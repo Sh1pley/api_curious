@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'root path' do
-  let!(:user) {create(:user)}
+  let!(:user) {create(:user, login: "Sh1pley", token: "d2aa7244db825ceba114450f449b6500d92f2950")}
 
   it 'asks user to log in' do
     visit root_path

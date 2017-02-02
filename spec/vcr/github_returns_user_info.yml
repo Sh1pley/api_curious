@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.github.com/users/Sh1pley?client_id=<client_id>&client_secret=<client_secret>
+    uri: https://api.github.com/users/Sh1pley?access_token=d2aa7244db825ceba114450f449b6500d92f2950
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Wed, 01 Feb 2017 20:13:23 GMT
+      - Thu, 02 Feb 2017 20:07:45 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -31,18 +31,24 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4912'
+      - '4974'
       X-Ratelimit-Reset:
-      - '1485981178'
+      - '1486068335'
       Cache-Control:
-      - public, max-age=60, s-maxage=60
+      - private, max-age=60, s-maxage=60
       Vary:
-      - Accept
+      - Accept, Authorization, Cookie, X-GitHub-OTP
       - Accept-Encoding
       Etag:
-      - W/"0549a64d30683426fd03fa13b8960ae1"
+      - W/"498222468e65de2b452dfe5fa91b67d7"
       Last-Modified:
       - Tue, 31 Jan 2017 23:01:41 GMT
+      X-Oauth-Scopes:
+      - gist, repo, user
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - "<client_id>"
       X-Github-Media-Type:
       - github.v3; format=json
       Access-Control-Expose-Headers:
@@ -61,14 +67,14 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Served-By:
-      - bd82876e9bf04990f289ba22f246ee9b
+      - b0ef53392caa42315c6206737946d931
       X-Github-Request-Id:
-      - E253:6972:E139B9C:10AEAF2D:58924163
+      - CC94:3F90:AD5865D:E2A35E4:58939191
     body:
       encoding: ASCII-8BIT
       string: '{"login":"Sh1pley","id":12022194,"avatar_url":"https://avatars.githubusercontent.com/u/12022194?v=3","gravatar_id":"","url":"https://api.github.com/users/Sh1pley","html_url":"https://github.com/Sh1pley","followers_url":"https://api.github.com/users/Sh1pley/followers","following_url":"https://api.github.com/users/Sh1pley/following{/other_user}","gists_url":"https://api.github.com/users/Sh1pley/gists{/gist_id}","starred_url":"https://api.github.com/users/Sh1pley/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Sh1pley/subscriptions","organizations_url":"https://api.github.com/users/Sh1pley/orgs","repos_url":"https://api.github.com/users/Sh1pley/repos","events_url":"https://api.github.com/users/Sh1pley/events{/privacy}","received_events_url":"https://api.github.com/users/Sh1pley/received_events","type":"User","site_admin":false,"name":"Jesse
         Shipley","company":"@turingschool","blog":null,"location":" Denver, CO","email":null,"hireable":true,"bio":"Back
-        End Engineering Student @turing","public_repos":25,"public_gists":3,"followers":2,"following":2,"created_at":"2015-04-19T18:34:28Z","updated_at":"2017-01-31T23:01:41Z"}'
+        End Engineering Student @turing","public_repos":25,"public_gists":3,"followers":2,"following":2,"created_at":"2015-04-19T18:34:28Z","updated_at":"2017-01-31T23:01:41Z","private_gists":2,"total_private_repos":0,"owned_private_repos":0,"disk_usage":1636,"collaborators":0,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":0}}'
     http_version: 
-  recorded_at: Wed, 01 Feb 2017 20:13:23 GMT
+  recorded_at: Thu, 02 Feb 2017 20:07:45 GMT
 recorded_with: VCR 3.0.3

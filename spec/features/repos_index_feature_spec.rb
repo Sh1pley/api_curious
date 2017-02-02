@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'repos path' do
-  let!(:user) {create(:user, login: "Sh1pley")}
+  let!(:user) {create(:user, login: "Sh1pley", token: "d2aa7244db825ceba114450f449b6500d92f2950")}
 
   it 'shows a user a list of their repos' do
     VCR.use_cassette("user_repos_index") do

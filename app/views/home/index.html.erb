@@ -7,33 +7,37 @@
       <img class="circle responsive-img z-depth-5 hide-on-small-only" src=<%= "#{current_user.avatar}" %>>
     </p>
   </section>
-    <section class="col-6 center-align">
-      <ul>
-        <h4>
-          <div class="btn home">
-            <li>Followers: <%= "#{@user.followers}" %></li>
-          </div><br>
-          <div class="btn home">
-            <li>Users Following: <%= "#{@user.following}" %></li>
-          </div><br>
-          <div class="btn home">
-            <li><%= link_to(repos_path) do %>
-              <span class="home">
-                Public Repos Made: <%= "#{@user.public_repos}" %>
-              </span>
-              <% end %>
+    <div class "btn home">
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header btn home">Followers</div>
+              <div class="collapsible-body center-align"><span><%= "#{@user.followers}" %><span></div>
             </li>
-          </div><br>
-        </h4>
-      </ul>
-    </section>
+
+            <li>
+              <div class="collapsible-header btn home">Following</div>
+              <div class="collapsible-body center-align"><span><%= "#{@user.following}" %><span></div>
+            </li>
+            <li>
+              <div class="collapsible-header btn home">Recent Repos</div>
+              <%= render 'layouts/repos_list', repos: @repos %>
+              <div class="collapsible-body center-align">
+                <%= link_to(repos_path) do %>
+                  <h5><span class="home strong">All Repos<span></h5>
+                <% end %>
+              </div>
+            </li>
+          </ul>
+    </div>
 <% else %>
     <header>
       <h4 class="center-align">
         Please log in above..
       </h4>
     </header>
-    <div>
-      <img class="responsive_img right img" src= <%= image_path("murakamicat.png")%> />
-    </div>
+    <section class="bottom col s12 m6 l3 center-align">
+      <p class="login centered">
+        <img class="login-img responsive_img" src= <%= image_path("murakamicat.png")%> />
+      </p>
+    </section>
 <% end%>
