@@ -1,6 +1,6 @@
-<nav>
-  <div class="nav-wrapper">
-    <a href="" class="brand-logo">HitGub</a>
+<nav class="wrap">
+  <header class="top-header">
+    <a href="/" class="brand-logo">HitGub</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <% if current_user %>
         <li>Hello, <%= current_user.username %></li> 
@@ -17,5 +17,5 @@
         <% end %>
       <% end %>
     </ul>
-  </div>
+  </header>
 </nav>

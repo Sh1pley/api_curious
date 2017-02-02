@@ -18,4 +18,9 @@ class GithubRepo
       new(raw_repo)
     end
   end
+
+  def self.get_repo(repo_name, login)
+    raw_repo = GithubService.get_repo(repo_name, login)
+    new(raw_repo)
+  end
 end

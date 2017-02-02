@@ -1,7 +1,7 @@
 <% if current_user %>
-<header>
-  <h1 class="welcome center-align">Welcome <%= current_user.username %>!</h1>
-</header>
+<section class="welcome">
+  <h1 class="center-align">Welcome <%= current_user.username %>!</h1>
+</section>
   <section class="col s12 m6 l3 center-align">
     <p>
       <img class="circle responsive-img z-depth-5 hide-on-small-only" src=<%= "#{current_user.avatar}" %>>
@@ -17,7 +17,12 @@
             <li>Users Following: <%= "#{@user.following}" %></li>
           </div><br>
           <div class="btn home">
-            <li>Public Repos Made: <%= "#{@user.public_repos}" %></li>
+            <li><%= link_to(repos_path) do %>
+              <span class="home">
+                Public Repos Made: <%= "#{@user.public_repos}" %>
+              </span>
+              <% end %>
+            </li>
           </div><br>
         </h4>
       </ul>

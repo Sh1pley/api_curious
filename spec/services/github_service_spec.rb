@@ -31,4 +31,16 @@ describe GithubService do
       end
     end
   end
+  context ".get_repo(repo_name, login)" do
+    it 'returns the correct repo' do
+      VCR.use_cassette("github_returns_single_repo") do
+        raw_repo = GithubService.get_repo("99_bottles", "Sh1pley")
+        
+        expect(raw_repo).to be_a(Hash)
+        expect(raw_repo[:name]).to eq("99_bottles")
+        expect(raw_repo[:language]).to eq("Ruby")
+        expect(raw_repo[:description]).to be_a(String)
+      end
+    end
+  end
 end
