@@ -1,7 +1,7 @@
 <nav class="wrap">
   <header class="top-header">
     <a href="/" class="brand-logo">HitGub</a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
+    <ul id="nav-mobile" class="right">
       <% if current_user %>
         <li>Hello, <%= current_user.username %></li> 
         <li><%= link_to(auth_github_logout_path) do %>

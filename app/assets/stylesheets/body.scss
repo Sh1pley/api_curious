@@ -9,11 +9,11 @@ background: linear-gradient(to left, #c2e59c , #64b3f4); /* W3C, IE 10+/ Edge, F
 padding-top: 7%;
 }
 
-.img {
-  right: 7%;
-  bottom: 5%;
-  width:40%; 
-  height:50%;
+img.login-img {
+  left: 3%;
+  bottom: 10%;
+  width:25%; 
+  height:25%;
 }
 
 img.circle {
@@ -30,4 +30,8 @@ img.circle {
 
 .show {
   padding-top: 15%;
+}
+
+section.bottom {
+  padding-top: 50%;
 }
