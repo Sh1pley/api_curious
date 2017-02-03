@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'GithubRepo' do
-  let!(:user) { create(:user, login: "Sh1pley", token: "d2aa7244db825ceba114450f449b6500d92f2950")}
+  let!(:user) { create(:user, login: "Sh1pley", token: ENV['token_id'])}
   context '.gather_repos(login)' do
     it 'gathers from github services' do
       VCR.use_cassette("github_get_repos") do

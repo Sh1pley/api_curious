@@ -10,4 +10,7 @@ VCR.configure do |c|
   c.filter_sensitive_data('<client_secret>') do |interaction|
     ENV['client_secret']
   end
+  c.filter_sensitive_data('<token_id>') do |interaction|
+    ENV['token_id']
+  end
 end

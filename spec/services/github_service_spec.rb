@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe GithubService do
-  let!(:user) {create(:user, login: "Sh1pley", token: "d2aa7244db825ceba114450f449b6500d92f2950")}
+  let!(:user) {create(:user, login: "Sh1pley", token: ENV['token_id'])}
 
   context ".request_user(login)" do
     it "returns basic user info on login" do
