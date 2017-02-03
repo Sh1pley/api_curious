@@ -11,12 +11,12 @@
           <ul class="collapsible" data-collapsible="accordion">
             <li>
               <div class="collapsible-header btn home">Followers</div>
-              <div class="collapsible-body center-align"><span><%= "#{@user.followers}" %><span></div>
+                <%= render 'layouts/followers_list', followers: @followers %>
             </li>
 
             <li>
               <div class="collapsible-header btn home">Following</div>
-              <div class="collapsible-body center-align"><span><%= "#{@user.following}" %><span></div>
+              <%= render 'layouts/followers_list', followers: @following %>
             </li>
             <li>
               <div class="collapsible-header btn home">Recent Repos</div>

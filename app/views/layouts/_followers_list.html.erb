@@ -1,0 +1,6 @@
+<% followers.each do |follower| %>
+  <div class="home collapsible-body center-align">
+    
+    <span class="home"><%= image_tag(follower.avatar, class: "follower") %><%= follower.login %></span>
+  </div>
+<% end %>

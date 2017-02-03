@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'GithubCommit' do
-  let!(:user) { create(:user, login: "Sh1pley", token: "d2aa7244db825ceba114450f449b6500d92f2950")}
+  let!(:user) { create(:user, login: "Sh1pley", token: ENV['token_id'])}
   context '.get_commits(login)' do
     it 'gets from github services' do
       VCR.use_cassette("github_get_commits") do

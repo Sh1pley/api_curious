@@ -9,10 +9,11 @@
   </p>
 
   <% @commits.each do |commit| %>
-  <p>
-    <%= commit.author[:name] %>
+  <h5 class="strong">
+    <%= commit.author[:name] %>:
+  </h5>
+  <article class="strong">
     <%= commit.message %>
-  </p>
+  </article>
   <% end %>
 </section>
-    
