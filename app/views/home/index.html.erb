@@ -1,26 +1,26 @@
 <% if current_user %>
 <section class="welcome">
-  <h1 class="center-align">Welcome <%= current_user.username %>!</h1>
+  <h1 class="center-align">Welcome <%= @presenter.name %>!</h1>
 </section>
   <section class="col s12 m6 l3 center-align">
     <p>
-      <img class="circle responsive-img z-depth-5 hide-on-small-only" src=<%= "#{current_user.avatar}" %>>
+      <img class="circle responsive-img z-depth-5 hide-on-small-only" src=<%= @presenter.avatar %>>
     </p>
   </section>
     <div class "btn home">
           <ul class="collapsible" data-collapsible="accordion">
             <li>
               <div class="collapsible-header btn home">Followers</div>
-                <%= render 'layouts/followers_list', followers: @followers %>
+                <%= render 'layouts/followers_list', followers: @presenter.followers %>
             </li>
 
             <li>
               <div class="collapsible-header btn home">Following</div>
-              <%= render 'layouts/followers_list', followers: @following %>
+              <%= render 'layouts/followers_list', followers: @presenter.following %>
             </li>
             <li>
               <div class="collapsible-header btn home">Recent Repos</div>
-              <%= render 'layouts/repos_list', repos: @repos %>
+              <%= render 'layouts/repos_list', repos: @presenter.repos %>
               <div class="collapsible-body center-align">
                 <%= link_to(repos_path) do %>
                   <h5><span class="home strong">All Repos<span></h5>

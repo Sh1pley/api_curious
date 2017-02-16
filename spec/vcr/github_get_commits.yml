@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Fri, 03 Feb 2017 02:14:07 GMT
+      - Fri, 03 Feb 2017 17:02:45 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -31,9 +31,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4871'
+      - '4990'
       X-Ratelimit-Reset:
-      - '1486088277'
+      - '1486144962'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Vary:
@@ -44,11 +44,10 @@ http_interactions:
       Last-Modified:
       - Thu, 10 Nov 2016 22:48:08 GMT
       X-Oauth-Scopes:
-      - gist, repo, user
+      - admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook,
+        delete_repo, gist, notifications, repo, user
       X-Accepted-Oauth-Scopes:
       - ''
-      X-Oauth-Client-Id:
-      - "<client_id>"
       X-Github-Media-Type:
       - github.v3; format=json
       Access-Control-Expose-Headers:
@@ -67,9 +66,9 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Served-By:
-      - 52189b7290fad804d77890ef34a1eeae
+      - e183f7c661b1bbc2c987b3c4dc7b04e0
       X-Github-Request-Id:
-      - D9F3:3F91:B386C3C:EA8C625:5893E76F
+      - E13E:6973:10371746:133B4F06:5894B7B5
     body:
       encoding: ASCII-8BIT
       string: '[{"sha":"9e2e51927c22e9b6535dd4561faf7f2a06cd52e5","commit":{"author":{"name":"Jesse
@@ -86,5 +85,5 @@ http_interactions:
         Shipley","email":"jesse.radack@gmail.com","date":"2016-10-25T14:26:14Z"},"message":"initial
         commit, 3 assertions, one not passing -- refactoring","tree":{"sha":"4c3af1862fb54be223acc49a4c00d6e93adbb83d","url":"https://api.github.com/repos/Sh1pley/99_bottles/git/trees/4c3af1862fb54be223acc49a4c00d6e93adbb83d"},"url":"https://api.github.com/repos/Sh1pley/99_bottles/git/commits/e32b949edae2cba4250f136d5367313b32e49fe5","comment_count":0},"url":"https://api.github.com/repos/Sh1pley/99_bottles/commits/e32b949edae2cba4250f136d5367313b32e49fe5","html_url":"https://github.com/Sh1pley/99_bottles/commit/e32b949edae2cba4250f136d5367313b32e49fe5","comments_url":"https://api.github.com/repos/Sh1pley/99_bottles/commits/e32b949edae2cba4250f136d5367313b32e49fe5/comments","author":{"login":"Sh1pley","id":12022194,"avatar_url":"https://avatars.githubusercontent.com/u/12022194?v=3","gravatar_id":"","url":"https://api.github.com/users/Sh1pley","html_url":"https://github.com/Sh1pley","followers_url":"https://api.github.com/users/Sh1pley/followers","following_url":"https://api.github.com/users/Sh1pley/following{/other_user}","gists_url":"https://api.github.com/users/Sh1pley/gists{/gist_id}","starred_url":"https://api.github.com/users/Sh1pley/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Sh1pley/subscriptions","organizations_url":"https://api.github.com/users/Sh1pley/orgs","repos_url":"https://api.github.com/users/Sh1pley/repos","events_url":"https://api.github.com/users/Sh1pley/events{/privacy}","received_events_url":"https://api.github.com/users/Sh1pley/received_events","type":"User","site_admin":false},"committer":{"login":"Sh1pley","id":12022194,"avatar_url":"https://avatars.githubusercontent.com/u/12022194?v=3","gravatar_id":"","url":"https://api.github.com/users/Sh1pley","html_url":"https://github.com/Sh1pley","followers_url":"https://api.github.com/users/Sh1pley/followers","following_url":"https://api.github.com/users/Sh1pley/following{/other_user}","gists_url":"https://api.github.com/users/Sh1pley/gists{/gist_id}","starred_url":"https://api.github.com/users/Sh1pley/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Sh1pley/subscriptions","organizations_url":"https://api.github.com/users/Sh1pley/orgs","repos_url":"https://api.github.com/users/Sh1pley/repos","events_url":"https://api.github.com/users/Sh1pley/events{/privacy}","received_events_url":"https://api.github.com/users/Sh1pley/received_events","type":"User","site_admin":false},"parents":[]}]'
     http_version: 
-  recorded_at: Fri, 03 Feb 2017 02:14:07 GMT
+  recorded_at: Fri, 03 Feb 2017 17:02:46 GMT
 recorded_with: VCR 3.0.3

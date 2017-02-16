@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Fri, 03 Feb 2017 02:14:08 GMT
+      - Fri, 03 Feb 2017 17:02:46 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -31,9 +31,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4869'
+      - '4988'
       X-Ratelimit-Reset:
-      - '1486088277'
+      - '1486144962'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Vary:
@@ -42,11 +42,10 @@ http_interactions:
       Etag:
       - W/"e219258506ff2a9b7064ba3e30f786eb"
       X-Oauth-Scopes:
-      - gist, repo, user
+      - admin:gpg_key, admin:org, admin:org_hook, admin:public_key, admin:repo_hook,
+        delete_repo, gist, notifications, repo, user
       X-Accepted-Oauth-Scopes:
       - ''
-      X-Oauth-Client-Id:
-      - "<client_id>"
       X-Github-Media-Type:
       - github.v3; format=json
       Access-Control-Expose-Headers:
@@ -65,12 +64,12 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Served-By:
-      - a51acaae89a7607fd7ee967627be18e4
+      - 2d7a5e35115884240089368322196939
       X-Github-Request-Id:
-      - D9F5:3F91:B386CB0:EA8C6BB:5893E76F
+      - E140:6973:1037179F:133B4F7E:5894B7B5
     body:
       encoding: ASCII-8BIT
       string: '[{"login":"Laszlo-JFLMTCO","id":18202283,"avatar_url":"https://avatars.githubusercontent.com/u/18202283?v=3","gravatar_id":"","url":"https://api.github.com/users/Laszlo-JFLMTCO","html_url":"https://github.com/Laszlo-JFLMTCO","followers_url":"https://api.github.com/users/Laszlo-JFLMTCO/followers","following_url":"https://api.github.com/users/Laszlo-JFLMTCO/following{/other_user}","gists_url":"https://api.github.com/users/Laszlo-JFLMTCO/gists{/gist_id}","starred_url":"https://api.github.com/users/Laszlo-JFLMTCO/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Laszlo-JFLMTCO/subscriptions","organizations_url":"https://api.github.com/users/Laszlo-JFLMTCO/orgs","repos_url":"https://api.github.com/users/Laszlo-JFLMTCO/repos","events_url":"https://api.github.com/users/Laszlo-JFLMTCO/events{/privacy}","received_events_url":"https://api.github.com/users/Laszlo-JFLMTCO/received_events","type":"User","site_admin":false},{"login":"Dpalazzari","id":19585280,"avatar_url":"https://avatars.githubusercontent.com/u/19585280?v=3","gravatar_id":"","url":"https://api.github.com/users/Dpalazzari","html_url":"https://github.com/Dpalazzari","followers_url":"https://api.github.com/users/Dpalazzari/followers","following_url":"https://api.github.com/users/Dpalazzari/following{/other_user}","gists_url":"https://api.github.com/users/Dpalazzari/gists{/gist_id}","starred_url":"https://api.github.com/users/Dpalazzari/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Dpalazzari/subscriptions","organizations_url":"https://api.github.com/users/Dpalazzari/orgs","repos_url":"https://api.github.com/users/Dpalazzari/repos","events_url":"https://api.github.com/users/Dpalazzari/events{/privacy}","received_events_url":"https://api.github.com/users/Dpalazzari/received_events","type":"User","site_admin":false}]'
     http_version: 
-  recorded_at: Fri, 03 Feb 2017 02:14:08 GMT
+  recorded_at: Fri, 03 Feb 2017 17:02:46 GMT
 recorded_with: VCR 3.0.3
